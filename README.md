@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# Full-Stack App with React, Flask, Langchain, Vertex AI, and Gemini
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application demonstrates a modern full-stack architecture optimized for development, deployment, and AI integration.
 
-Currently, two official plugins are available:
+## Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React:** Built with React to provide a high-performance, interactive user interface.
 
-## Expanding the ESLint configuration
+## Backend
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Flask:** A lightweight Python framework that provides a flexible API layer for data management and communication with the frontend.
+- **Langchain:** Simplifies interactions with Vertex AI's datastore and Gemini, a powerful large language model from Google AI.
 
-- Configure the top-level `parserOptions` property like this:
+## Deployment
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- **Multi-Stage Docker Build:** This build process optimizes the image size and improves deployment efficiency:
+  - **Stage 1:** Builds the React frontend application.
+  - **Stage 2:** Packages the Flask backend with Nginx for production-ready serving.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Benefits
+
+- **Clean Separation of Concerns:** Decoupling the frontend (React) and backend (Flask) simplifies development, testing, maintenance, and scaling.
+- **Rapid Development:** React and Flask offer tools and frameworks that speed up the development process.
+- **AI Integration:** Langchain makes it easy to integrate and interact with the Vertex AI datastore and leverage the Gemini large language model for intelligent functionality.
+- **Optimized Deployment:** The multi-stage Docker build creates smaller, more efficient images, leading to faster deployments and reduced resource usage.
