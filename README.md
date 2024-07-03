@@ -1,10 +1,11 @@
-# Full-Stack App with React, Flask, Langchain, Vertex AI, and Gemini
+# Full-Stack App with React, Flask, Langchain, Vertex AI, Gemini, and Firebase Auth
 
-This application demonstrates a modern full-stack architecture optimized for development, deployment, and AI integration.
+This application showcases a modern full-stack architecture optimized for development, deployment, AI integration, and user authentication.
 
 ## Frontend
 
 - **React:** Built with React to provide a high-performance, interactive user interface.
+- **Firebase Auth:** Seamlessly integrates Firebase Authentication to handle user sign-up, sign-in, and secure session management.
 
 ## Backend
 
@@ -23,3 +24,4 @@ This application demonstrates a modern full-stack architecture optimized for dev
 - **Rapid Development:** React and Flask offer tools and frameworks that speed up the development process.
 - **AI Integration:** Langchain makes it easy to integrate and interact with the Vertex AI datastore and leverage the Gemini large language model for intelligent functionality.
 - **Optimized Deployment:** The multi-stage Docker build creates smaller, more efficient images, leading to faster deployments and reduced resource usage.
+- **Secure Authentication:** Firebase Auth provides robust, scalable user authentication and simplifies the management of user accounts.
